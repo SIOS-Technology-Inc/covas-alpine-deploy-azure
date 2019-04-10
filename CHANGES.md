@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.3.0
+
+- Feature: Updated README
+
 ## 0.2.0
 
 - Feature: Added README
