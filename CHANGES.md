@@ -2,6 +2,12 @@
 
 ## Next
 
+## 0.4.0
+
+- Feature: Upgraded Terraform to 0.12.3
+- Feature: Specified azure-cli version to 2.0.67
+- Cleanup: Removed vim
+
 ## 0.3.0
 
 - Feature: Updated README
