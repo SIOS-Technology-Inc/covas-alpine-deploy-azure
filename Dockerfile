@@ -4,6 +4,7 @@ ENV TF_VERSION 0.12.3
 ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 
 ENV ANSIBLE_VERSION 2.7.10
+ENV AWSCLI_VERSION  1.16.186
 ENV AZURE_VERSION   2.0.67
 ENV DOCKER_COMPOSE  1.24.0
 ENV DOCKER_ENGINE   3.7.2
@@ -16,6 +17,7 @@ RUN echo "System dependencies" && \
       curl \
       docker \
       git \
+      gnupg \
       make \
       openssl \
       python3
@@ -50,6 +52,9 @@ RUN echo "Terraform dependencies" && \
 
 RUN echo "Azure dependencies" && \
     pip --no-cache-dir install azure-cli==${AZURE_VERSION}
+
+RUN echo "AWS dependencies" && \
+    pip --no-cache-dir install awscli==${AWSCLI_VERSION}
 
 RUN echo "Cleanup" && \
     apk del --purge build-deps && \
