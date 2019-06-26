@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.5.0
+
+- Feature: Added gnupg
+- Feature: Added awscli
+
 ## 0.4.0
 
 - Feature: Upgraded Terraform to 0.12.3
