@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.7.1
+
+- Cleanup: Removed ansible[azure]
+
 ## 0.7.0
 
 - Feature: Upgraded Terraform to 0.12.5

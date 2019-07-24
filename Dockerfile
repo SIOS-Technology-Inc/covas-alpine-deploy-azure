@@ -40,7 +40,6 @@ RUN echo "Python3 dependencies" && \
 RUN echo "Ansible dependencies" && \
     pip --no-cache-dir install \
       ansible==${ANSIBLE_VERSION} \
-      ansible[azure]==${ANSIBLE_VERSION} \
       docker-compose==${DOCKER_COMPOSE} \
       docker==${DOCKER_ENGINE}
 
