@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.7.0
+
+- Feature: Upgraded Terraform to 0.12.5
+
 ## 0.6.0
 
 - Feature: Added ansible[azure] in Ansible dependency
