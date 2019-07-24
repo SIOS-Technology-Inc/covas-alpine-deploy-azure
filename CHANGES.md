@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.6.0
+
+- Feature: Added ansible[azure] in Ansible dependency
+
 ## 0.5.0
 
 - Feature: Added gnupg
