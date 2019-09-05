@@ -2,6 +2,15 @@
 
 ## Next
 
+## 0.8.0
+
+- Feature: Upgraded docker to 4.0.2
+- Feature: Upgraded docker-compose to 1.24.1
+- Feature: Upgraded azure-cli to 2.0.72
+- Feature: Upgraded awscli to 1.16.232
+- Feature: Upgraded ansible to 2.8.4
+- Feature: Upgraded Terraform to 0.12.8
+
 ## 0.7.1
 
 - Cleanup: Removed ansible[azure]
