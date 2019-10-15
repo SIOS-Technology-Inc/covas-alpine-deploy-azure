@@ -2,6 +2,13 @@
 
 ## Next
 
+## 0.9.0
+
+- Feature: Upgraded azure-cli to 2.0.75
+- Feature: Upgraded awscli to 1.16.259
+- Feature: Upgraded ansible to 2.8.5
+- Feature: Upgraded Terraform to 0.12.10
+
 ## 0.8.0
 
 - Feature: Upgraded docker to 4.0.2
