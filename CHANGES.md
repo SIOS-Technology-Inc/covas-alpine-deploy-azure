@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.10.0
+
+- Feature: Installed nodejs
+
 ## 0.9.0
 
 - Feature: Upgraded azure-cli to 2.0.75
