@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.11.0
+
+- Feature: Installed npm
+
 ## 0.10.0
 
 - Feature: Installed nodejs

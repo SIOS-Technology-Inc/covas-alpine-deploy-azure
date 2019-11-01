@@ -20,6 +20,7 @@ RUN echo "System dependencies" && \
       gnupg \
       make \
       nodejs \
+      npm \
       openssl \
       python3
 
