@@ -2,9 +2,9 @@
 
 ## Next
 
-## 0.10.1
+## 0.11.0
 
-- Bugfix: Installed missing npm
+- Feature: Installed npm
 
 ## 0.10.0
 
