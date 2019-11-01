@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.10.1
+
+- Bugfix: Installed missing npm
+
 ## 0.10.0
 
 - Feature: Installed nodejs
