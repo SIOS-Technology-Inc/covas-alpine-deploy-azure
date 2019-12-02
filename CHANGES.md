@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.13.0
+
+- Feature: Installed jq
+
 ## 0.12.0
 
 - Feature: Added MongoDB migration tool

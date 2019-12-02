@@ -18,6 +18,7 @@ RUN echo "System dependencies" && \
         docker \
         git \
         gnupg \
+        jq \
         make \
         nodejs \
         npm \
