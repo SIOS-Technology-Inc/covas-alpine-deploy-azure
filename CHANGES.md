@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.12.0
+
+- Feature: Added MongoDB migration tool
+- Refactor: Concatenated commands to reduce layers
+
 ## 0.11.0
 
 - Feature: Installed npm
