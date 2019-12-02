@@ -11,53 +11,50 @@ ENV DOCKER_ENGINE   4.0.2
 
 # Install OS dependencies.
 RUN echo "System dependencies" && \
-    apk add --update \
-      bash \
-      ca-certificates \
-      curl \
-      docker \
-      git \
-      gnupg \
-      make \
-      nodejs \
-      npm \
-      openssl \
-      python3
-
-RUN echo "Build dependencies" && \
-    apk add --virtual build-deps \
-      build-base \
-      gcc \
-      libffi-dev \
-      musl-dev \
-      openssl-dev \
-      python3-dev
-
-RUN echo "Python3 dependencies" && \
-    python3 -m ensurepip && \
-    pip3 install --upgrade pip cffi && \
-    if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
-    if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi
-
-RUN echo "Ansible dependencies" && \
-    pip --no-cache-dir install \
-      ansible==${ANSIBLE_VERSION} \
-      docker-compose==${DOCKER_COMPOSE} \
-      docker==${DOCKER_ENGINE}
-
-RUN echo "Terraform dependencies" && \
-    cd /tmp && \
-    wget https://releases.hashicorp.com/terraform/${TF_VERSION}/${TF_FILE} && \
-    unzip ${TF_FILE} && \
-    mv terraform /usr/bin && \
-    rm -f ${TF_FILE}
-
-RUN echo "Azure dependencies" && \
-    pip --no-cache-dir install azure-cli==${AZURE_VERSION}
-
-RUN echo "AWS dependencies" && \
-    pip --no-cache-dir install awscli==${AWSCLI_VERSION}
-
-RUN echo "Cleanup" && \
-    apk del --purge build-deps && \
-    rm -rf /var/cache/apk/*
+      apk add --update \
+        bash \
+        ca-certificates \
+        curl \
+        docker \
+        git \
+        gnupg \
+        make \
+        nodejs \
+        npm \
+        openssl \
+        python3 && \
+    echo "Build dependencies" && \
+      apk add --virtual build-deps \
+        build-base \
+        gcc \
+        libffi-dev \
+        musl-dev \
+        openssl-dev \
+        python3-dev && \
+    echo "Python3 dependencies" && \
+      python3 -m ensurepip && \
+      pip3 install --upgrade pip cffi && \
+      if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
+      if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
+    echo "Ansible dependencies" && \
+      pip --no-cache-dir install \
+        ansible==${ANSIBLE_VERSION} \
+        docker-compose==${DOCKER_COMPOSE} \
+        docker==${DOCKER_ENGINE} && \
+    echo "Terraform dependencies" && \
+      cd /tmp && \
+      wget https://releases.hashicorp.com/terraform/${TF_VERSION}/${TF_FILE} && \
+      unzip ${TF_FILE} && \
+      mv terraform /usr/bin && \
+      rm -f ${TF_FILE} && \
+    echo "Azure dependencies" && \
+      pip --no-cache-dir install azure-cli==${AZURE_VERSION} && \
+    echo "AWS dependencies" && \
+      pip --no-cache-dir install awscli==${AWSCLI_VERSION} && \
+    echo "Install migrate util" && \
+      wget https://github.com/instoll/alpine-mongoshell/releases/download/0.1.0/migrate && \
+      chmod 0755 migrate && \
+      mv migrate /usr/bin && \
+    echo "Cleanup" && \
+      apk del --purge build-deps && \
+      rm -rf /var/cache/apk/*
