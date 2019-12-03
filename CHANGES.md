@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.15.0
+
+- Feature: Installed @sentry/cli
+
 ## 0.14.0
 
 - Feature: Upgraded dependencies
