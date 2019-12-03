@@ -6,3 +6,4 @@
 - Terraform
 - azure-cli
 - MongoDB migration tool
+- sentry-cli

@@ -56,6 +56,9 @@ RUN echo "System dependencies" && \
       wget https://github.com/instoll/alpine-mongoshell/releases/download/0.1.0/migrate && \
       chmod 0755 migrate && \
       mv migrate /usr/bin && \
+    echo "Sentry dependencies" && \
+      npm config set unsafe-perm true && \
+      npm install -g @sentry/cli && \
     echo "Cleanup" && \
       apk del --purge build-deps && \
       rm -rf /var/cache/apk/*
