@@ -2,6 +2,12 @@
 
 ## Next
 
+## 0.16.0
+
+- Feature: Upgraded awscli to 1.16.300
+- Feature: Upgraded ansible to 2.9.2
+- Feature: Upgraded Terraform to 0.12.17
+
 ## 0.15.0
 
 - Feature: Installed @sentry/cli
