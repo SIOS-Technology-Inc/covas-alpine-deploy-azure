@@ -1,6 +1,14 @@
 # CHANGES
 
 ## Next
+## 0.17.0
+- Upgraded alpine to 3.15
+- Upgraded terraform to 0.13.7
+- Upgraded awscli to 1.22.54
+- Upgraded ansible to 4.8.0
+- Upgraded azure-cli to 2.33.0
+- Upgraded docker to 5.0.3
+- Upgraded Upgraded docker-compose to 1.29.2
 
 ## 0.16.0
 
