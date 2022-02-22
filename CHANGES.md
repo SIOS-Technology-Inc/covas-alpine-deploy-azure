@@ -1,6 +1,10 @@
 # CHANGES
 
 ## Next
+
+## 0.18.0
+- Upgraded terraform to 0.15.5
+
 ## 0.17.0
 - Upgraded alpine to 3.15
 - Upgraded terraform to 0.13.7
